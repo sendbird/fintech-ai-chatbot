@@ -35,7 +35,7 @@ let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbi
 8. [Limitations](#limitations)
 
 ## Use case: Fintech
-This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the order list, showing order details, canceling orders, and providing recommendations.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
+This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the Failed transactions, retrying failed payments, and providing last transfers.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
 
 ## How it works
 <img width="2000" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/d4ff5f4c-1df9-40d7-9901-9e3d342d94d8">
@@ -60,6 +60,8 @@ To run the demo app, you must specify `System prompt`, `Function Calls`.
 
 You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot settings > Parameter settings > System prompt.
 
+<img width="1149" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/d502d03f-fe61-494b-9038-c2dbafb0500c">
+
 - Input example
 ```
 You are a Fintech bot that handles and manages customer transactions. You will be interacting with customers who have queries related to their financial transactions. If the user wants to retry the transaction, Before retrying payment, always ask the user if they would like to proceed with the transaction or not. 
@@ -78,9 +80,10 @@ If a customer needs further assistance related to Fintech Bot functionalities or
 You can find this setting under Chat > AI Chatbot > Settings > Function Calls. 
 
 - Example list of Function Calls
-  
+  <img width="1231" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/6cf69e85-8e10-4eac-8d2f-f3df7472d700">
 
 - Input example
+  <img width="1235" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/4a0f758e-20ab-45b3-97bf-a55df896ea8b">
   
 
 In addition, you can enhance user experience by streamlining the communication with a Welcome Message, Quick Replies and Button. Using Quick Replies can improve the clarity of your customer’s intention as they are presented with a list of predefined options determined by you.
@@ -94,8 +97,7 @@ The `Welcome Message` is the first message displayed to users by the chatbot. Al
 You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot settings > Default messages > Welcome message / Suggested replies.
 
 - Input example
-  
-
+  <img width="1148" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/c2cd887d-4f18-41b1-85e3-fb8301010e25">
 
 ## UI Components
 ### CardView
