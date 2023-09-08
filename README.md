@@ -35,7 +35,7 @@ let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbi
 8. [Limitations](#limitations)
 
 ## Use case: Fintech
-This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the Failed transactions, retrying failed payments, and providing last transfers.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on the customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
+This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the failed transactions, retrying failed payments, and providing last transfers.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on the customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
 
 ## How it works
 <img width="2000" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/d4ff5f4c-1df9-40d7-9901-9e3d342d94d8">
