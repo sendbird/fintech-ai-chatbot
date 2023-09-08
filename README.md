@@ -7,12 +7,30 @@
 This demo app showcases what AI Chatbots with Sendbird can do to enhance the customer experience of your service with more personalized and comprehensive customer support.
 Utilizing OpenAI’s GPT3.5 and its Function Calling functionality, ***Sendbird helps you build a chatbot that can go extra miles: providing informative responses with the data source you feed to the bot, accommodating customer’s requests such as tracking and canceling their orders, and even recommending new products.*** Create your own next generation AI Chatbot by following the tutorial below.
 
-![fintech](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/5c4f174b-bc49-49e3-92a7-734d1ccb3780)
+![fintech](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/b854bedf-b678-4ebd-9148-9dea2f75ac38)
 
 ## Prerequisites
 1. [Sendbird Account](https://dashboard.sendbird.com/)
 2. Application ID and ChatBot: Please refer to [Step1 ~ Step4](https://sendbird.com/developer/tutorials/create-an-ai-chatbot)
-
+   - [Fintech FAQ Knowledge Base File](https://github.com/sendbird/chat-ai-green-vertical-contents/blob/github-pages/fintech_faq.txt)
+     ```
+      Q: What is Fintech Demo App?
+      A: Fintech Demo App is an all-in-one app that allows users to pay, chat, and explore. It's a digital marketplace platform offering a simple, secure, and reliable experience. Users can chat, transfer money, pay bills, make mobile payments, and engage in other entertainment features.
+      
+      Q: What can I do with the app?
+      A: Users can connect with friends and family via free video and voice calls, share videos, pictures, games, and text messages. You can also discover new friends, pay for services, and soon, listen to music and play games.
+      
+      Q: Is Fintech Demo App free?
+      A: Yes, it is a free digital marketplace app offering data or Wifi-based video and voice calls, as well as other features like music and gaming.
+      
+      Q: Are there regional restrictions for voice messages?
+      A: No, there are no limits. You can use the Fintech Demo App from any location.
+      
+      Q: How do I register?
+     
+        ...
+     
+     ```
 ## How to open the demo app
 1. Open Xcode Demo project
 ```shell
