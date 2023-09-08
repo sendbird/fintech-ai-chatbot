@@ -12,7 +12,25 @@ Utilizing OpenAI’s GPT3.5 and its Function Calling functionality, ***Sendbird 
 ## Prerequisites
 1. [Sendbird Account](https://dashboard.sendbird.com/)
 2. Application ID and ChatBot: Please refer to [Step1 ~ Step4](https://sendbird.com/developer/tutorials/create-an-ai-chatbot)
-   - Fintech FAQ: 
+   - [Fintech FAQ Knowledge Base File](https://github.com/sendbird/chat-ai-green-vertical-contents/blob/github-pages/fintech_faq.txt)
+     ```
+      Q: What is Fintech Demo App?
+      A: Fintech Demo App is an all-in-one app that allows users to pay, chat, and explore. It's a digital marketplace platform offering a simple, secure, and reliable experience. Users can chat, transfer money, pay bills, make mobile payments, and engage in other entertainment features.
+      
+      Q: What can I do with the app?
+      A: Users can connect with friends and family via free video and voice calls, share videos, pictures, games, and text messages. You can also discover new friends, pay for services, and soon, listen to music and play games.
+      
+      Q: Is Fintech Demo App free?
+      A: Yes, it is a free digital marketplace app offering data or Wifi-based video and voice calls, as well as other features like music and gaming.
+      
+      Q: Are there regional restrictions for voice messages?
+      A: No, there are no limits. You can use the Fintech Demo App from any location.
+      
+      Q: How do I register?
+     
+        ...
+     
+     ```
 ## How to open the demo app
 1. Open Xcode Demo project
 ```shell
