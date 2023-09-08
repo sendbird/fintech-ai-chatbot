@@ -49,8 +49,9 @@ let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbi
 4. [System Message](#system-message)
 5. [Function Calls](#function-calls)
 6. [Welcome Message and Suggested Replies](#welcome-message-and-suggested-replies)
-7. [UI Components](#ui-components)
-8. [Limitations](#limitations)
+7. [Custom Responses](#custom-responses)
+8. [UI Components](#ui-components)
+9. [Limitations](#limitations)
 
 ## Use case: Fintech
 This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the failed transactions, retrying failed payments, and providing last transfers.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on the customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
@@ -95,7 +96,7 @@ If a customer needs further assistance related to Fintech Bot functionalities or
 ### Function Calls
 `Function Calls` allows you to define situations where the ChatBot needs to interface with external APIs. Within `Function Calls`, you need to enter definitions for the Function and Parameters to pass to GPT, and you can define the specs of the 3rd party API to obtain the actual data of the specified Function.
 
-You can find this setting under Chat > AI Chatbot > Settings > Function Calls. 
+You can find this setting under Chat > AI Chatbot > Function Calls. 
 
 - Example list of Function Calls
   <img width="1231" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/6cf69e85-8e10-4eac-8d2f-f3df7472d700">
@@ -115,6 +116,16 @@ You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot set
 
 - Input example
   <img width="1148" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/c2cd887d-4f18-41b1-85e3-fb8301010e25">
+
+## Custom Responses
+
+Through the `Custom Responses` feature, you can execute tailored response messages or function calls based on the user's message intent. Additionally, you can also add `Suggested Replies`. 
+
+To allow the chatbot to accurately understand the intent, it's recommended to input about 10 messages. By using the `AI suggestions` feature, this input process can be made much more convenient.
+
+You can find this setting under Chat > AI Chatbot > Custom reponses. 
+
+![custom_response](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/fd1388d5-c684-4334-9168-5429429617f1)
 
 ## UI Components
 ### CardView
