@@ -49,8 +49,9 @@ let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbi
 4. [System Message](#system-message)
 5. [Function Calls](#function-calls)
 6. [Welcome Message and Suggested Replies](#welcome-message-and-suggested-replies)
-7. [UI Components](#ui-components)
-8. [Limitations](#limitations)
+7. [Custom Response](#custom-response)
+8. [UI Components](#ui-components)
+9. [Limitations](#limitations)
 
 ## Use case: Fintech
 This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the failed transactions, retrying failed payments, and providing last transfers.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on the customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
