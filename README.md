@@ -12,7 +12,7 @@ Utilizing OpenAI’s GPT3.5 and its Function Calling functionality, ***Sendbird 
 ## Prerequisites
 1. [Sendbird Account](https://dashboard.sendbird.com/)
 2. Application ID and ChatBot: Please refer to [Step1 ~ Step4](https://sendbird.com/developer/tutorials/create-an-ai-chatbot)
-
+   - Fintech FAQ: 
 ## How to open the demo app
 1. Open Xcode Demo project
 ```shell
