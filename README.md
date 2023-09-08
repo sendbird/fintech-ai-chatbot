@@ -18,7 +18,7 @@ Utilizing OpenAI’s GPT3.5 and its Function Calling functionality, ***Sendbird 
 ```shell
 open Sample/QuickStart.xcodeproj
 ```
-2. Set the `applicationId` and `botId` in [`AppDelegate.swift`](https://github.com/sendbird/fintech-ai-chatbot/blob/develop/Sample/QuickStart/AppDelegate.swift#L13-L23)
+2. Set the `applicationId` and `botId` in [`AppDelegate.swift`](https://github.com/sendbird/fintech-ai-chatbot/blob/main/Sample/QuickStart/AppDelegate.swift#L13-L23)
 ```swift
 static let botId: String = <#botId: String#>  // TODO: set your sendbird bot id
 let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbird application id
@@ -101,7 +101,7 @@ You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot set
 ### CardView
 The `data` in the response are displayed in a Card view. In the demo, information such as order items and their delivery status can be displayed in a card with an image, title, and description. Customization of the view can be done through `cardViewParamsCollectionBuilder` and `SBUCardViewParams`. The following codes show how to set the Card view of order status.
 
-[SBUUserMessageCell.swift](https://github.com/sendbird/fintech-ai-chatbot/blob/develop/Sources/View/Channel/MessageCell/SBUUserMessageCell.swift#L159)
+[SBUUserMessageCell.swift](https://github.com/sendbird/fintech-ai-chatbot/blob/main/Sources/View/Channel/MessageCell/SBUUserMessageCell.swift#L159)
 ```swift
 // MARK: Card List
 if let cardListView = self.cardListView {
@@ -199,7 +199,7 @@ if functionResponse.type != .null {
 ### QuickReplyView
 The following codes demonstrate how to set the view for Quick Replies. The values in `quick_replies` of `message.data` are used as Quick Replies.
 
-[SBUUserMessageCell.swift](https://github.com/sendbird/fintech-ai-chatbot/blob/develop/Sources/View/Channel/MessageCell/SBUUserMessageCell.swift#L149)
+[SBUUserMessageCell.swift](https://github.com/sendbird/fintech-ai-chatbot/blob/main/Sources/View/Channel/MessageCell/SBUUserMessageCell.swift#L149)
 ```swift
 // MARK: Quick Reply
 if let quickReplyView = self.quickReplyView {
