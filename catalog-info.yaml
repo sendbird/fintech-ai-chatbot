@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ecommerce-ai-chatbot
-  description: This is a demo project for Ecommerce AI Chatbot
+  name: fintech-ai-chatbot
+  description: This is a demo project for Fintech AI Chatbot
   annotations:
-    github.com/project-slug: sendbird/ecommerce-ai-chatbot
+    github.com/project-slug: sendbird/fintech-ai-chatbot
 spec:
   type: library
   lifecycle: production
