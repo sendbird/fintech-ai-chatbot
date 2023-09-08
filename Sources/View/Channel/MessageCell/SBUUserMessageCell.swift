@@ -188,7 +188,7 @@ open class SBUUserMessageCell: SBUContentBaseMessageCell, SBUUserMessageTextView
                         self.addCardListView(with: items)
                     }
                 } else if functionName.contains("get_transfer_recent") {
-                    customText = "Here are the details of your recent refunds:"
+                    customText = "Here are the details of your last transfers:"
                     SBUGlobalCustomParams.cardViewParamsCollectionBuilder = { messageData in
                         guard let json = try? JSON(parseJSON: messageData) else { return [] }
                         

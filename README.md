@@ -7,7 +7,7 @@
 This demo app showcases what AI Chatbots with Sendbird can do to enhance the customer experience of your service with more personalized and comprehensive customer support.
 Utilizing OpenAI’s GPT3.5 and its Function Calling functionality, ***Sendbird helps you build a chatbot that can go extra miles: providing informative responses with the data source you feed to the bot, accommodating customer’s requests such as tracking and canceling their orders, and even recommending new products.*** Create your own next generation AI Chatbot by following the tutorial below.
 
-![final_output](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/f191c66a-2642-4269-ab92-a3567da618aa)
+![fintech](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/5c4f174b-bc49-49e3-92a7-734d1ccb3780)
 
 ## Prerequisites
 1. [Sendbird Account](https://dashboard.sendbird.com/)
@@ -18,26 +18,27 @@ Utilizing OpenAI’s GPT3.5 and its Function Calling functionality, ***Sendbird 
 ```shell
 open Sample/QuickStart.xcodeproj
 ```
-2. Set the `applicationId` and `botId` in [`AppDelegate.swift`](https://github.com/sendbird/fintech-ai-chatbot/blob/develop/Sample/QuickStart/AppDelegate.swift#L13-L23)
+2. Set the `applicationId` and `botId` in [`AppDelegate.swift`](https://github.com/sendbird/fintech-ai-chatbot/blob/main/Sample/QuickStart/AppDelegate.swift#L13-L23)
 ```swift
 static let botId: String = <#botId: String#>  // TODO: set your sendbird bot id
 let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbird application id
 ```
 
 ## Table of Contents
-1. [Use case: Fintech](##use-case-fintech)
-2. [How it works](##how-it-works)
-3. [Demo app settings](##demo-app-settings)
-4. [System Message and Function Calling](##system-message-and-function-calling)
-5. [Welcome Message and Quick Replies](##welcome-message-and-quick-replies)
-6. [UI Components](##ui-components)
-7. [Limitations](##limitations)
+1. [Use case: Fintech](#use-case-fintech)
+2. [How it works](#how-it-works)
+3. [Demo app settings](#demo-app-settings)
+4. [System Message](#system-message)
+5. [Function Calls](#function-calls)
+6. [Welcome Message and Suggested Replies](#welcome-message-and-suggested-replies)
+7. [UI Components](#ui-components)
+8. [Limitations](#limitations)
 
 ## Use case: Fintech
-This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the order list, showing order details, canceling orders, and providing recommendations.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
+This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the failed transactions, retrying failed payments, and providing last transfers.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on the customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
 
 ## How it works
-<img width="2556" alt="image" src="https://github.com/sendbird/sendbird-uikit-ios/assets/104121286/12a8cb5f-8127-41cb-9570-3c979f977ad4">
+<img width="2000" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/d4ff5f4c-1df9-40d7-9901-9e3d342d94d8">
 
 1. A customer sends a message containing a specific request on the client app to the Sendbird server.
 2. The Sendbird server then delivers the message to Chat GPT.
@@ -52,12 +53,14 @@ This demo app demonstrates the implementation of the AI Chatbot tailored for fin
 ***Note***: Currently, calling a 3rd party function is an experimental feature, and some logics are handled on the client-side for convenience purposes. Due to this, the current version for iOS (3.7.0 beta) will see breaking changes in the future, especially for QuickReplyView and CardView. Also, the ad-hoc support from the server that goes into the demo may be discontinued at any time and will be replaced with a proper feature on Sendbird Dashboard in the future.
 
 ## Demo app settings
-To run the demo app, you must specify `System prompt`, `Function Calls`.
+To run the demo app, you must specify `System prompt` and `Function Calls`.
 
 ### System Message
-`System prompt` defines the Persona of the ChatBot, informing users of the role the ChatBot plays. For this Fintech AI ChatBot, It's designed to be an AI assistant that handles and manages customer orders.
+`System prompt` defines the Persona of the ChatBot, informing users of the role the ChatBot plays. For this Fintech AI ChatBot, it is designed to be an AI assistant that handles and manages customer orders.
 
 You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot settings > Parameter settings > System prompt.
+
+<img width="1149" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/d502d03f-fe61-494b-9038-c2dbafb0500c">
 
 - Input example
 ```
@@ -77,12 +80,12 @@ If a customer needs further assistance related to Fintech Bot functionalities or
 You can find this setting under Chat > AI Chatbot > Settings > Function Calls. 
 
 - Example list of Function Calls
-  
+  <img width="1231" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/6cf69e85-8e10-4eac-8d2f-f3df7472d700">
 
 - Input example
+  <img width="1235" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/4a0f758e-20ab-45b3-97bf-a55df896ea8b">
   
-
-In addition, you can enhance user experience by streamlining the communication with a Welcome Message, Quick Replies and Button. Using Quick Replies can improve the clarity of your customer’s intention as they are presented with a list of predefined options determined by you.
+In addition, you can enhance the user experience by streamlining communication with a Welcome Message, Quick Replies, and Button. Using Quick Replies can clarify your customer’s intentions, as they are presented with a list of predefined options set by you.
 
 Mock API Server Information: [Link](https://documenter.getpostman.com/view/21816899/2s9YBxZbgh)
 
@@ -93,14 +96,13 @@ The `Welcome Message` is the first message displayed to users by the chatbot. Al
 You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot settings > Default messages > Welcome message / Suggested replies.
 
 - Input example
-  
-
+  <img width="1148" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/c2cd887d-4f18-41b1-85e3-fb8301010e25">
 
 ## UI Components
 ### CardView
 The `data` in the response are displayed in a Card view. In the demo, information such as order items and their delivery status can be displayed in a card with an image, title, and description. Customization of the view can be done through `cardViewParamsCollectionBuilder` and `SBUCardViewParams`. The following codes show how to set the Card view of order status.
 
-[SBUUserMessageCell.swift](https://github.com/sendbird/fintech-ai-chatbot/blob/develop/Sources/View/Channel/MessageCell/SBUUserMessageCell.swift#L159)
+[SBUUserMessageCell.swift](https://github.com/sendbird/fintech-ai-chatbot/blob/main/Sources/View/Channel/MessageCell/SBUUserMessageCell.swift#L159)
 ```swift
 // MARK: Card List
 if let cardListView = self.cardListView {
@@ -134,7 +136,7 @@ if functionResponse.type != .null {
                 self.addCardListView(with: items)
             }
         } else if functionName.contains("get_transfer_recent") {
-            customText = "Here are the details of your recent refunds:"
+            customText = "Here are the details of your last transfers:"
             SBUGlobalCustomParams.cardViewParamsCollectionBuilder = { messageData in
                 guard let json = try? JSON(parseJSON: messageData) else { return [] }
                 
@@ -198,7 +200,7 @@ if functionResponse.type != .null {
 ### QuickReplyView
 The following codes demonstrate how to set the view for Quick Replies. The values in `quick_replies` of `message.data` are used as Quick Replies.
 
-[SBUUserMessageCell.swift](https://github.com/sendbird/fintech-ai-chatbot/blob/develop/Sources/View/Channel/MessageCell/SBUUserMessageCell.swift#L149)
+[SBUUserMessageCell.swift](https://github.com/sendbird/fintech-ai-chatbot/blob/main/Sources/View/Channel/MessageCell/SBUUserMessageCell.swift#L149)
 ```swift
 // MARK: Quick Reply
 if let quickReplyView = self.quickReplyView {
