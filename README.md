@@ -35,7 +35,7 @@ let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbi
 8. [Limitations](#limitations)
 
 ## Use case: Fintech
-This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the Failed transactions, retrying failed payments, and providing last transfers.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
+This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the Failed transactions, retrying failed payments, and providing last transfers.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on the customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
 
 ## How it works
 <img width="2000" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/d4ff5f4c-1df9-40d7-9901-9e3d342d94d8">
@@ -56,7 +56,7 @@ This demo app demonstrates the implementation of the AI Chatbot tailored for fin
 To run the demo app, you must specify `System prompt` and `Function Calls`.
 
 ### System Message
-`System prompt` defines the Persona of the ChatBot, informing users of the role the ChatBot plays. For this Fintech AI ChatBot, It's designed to be an AI assistant that handles and manages customer orders.
+`System prompt` defines the Persona of the ChatBot, informing users of the role the ChatBot plays. For this Fintech AI ChatBot, it is designed to be an AI assistant that handles and manages customer orders.
 
 You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot settings > Parameter settings > System prompt.
 
@@ -85,8 +85,7 @@ You can find this setting under Chat > AI Chatbot > Settings > Function Calls.
 - Input example
   <img width="1235" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/4a0f758e-20ab-45b3-97bf-a55df896ea8b">
   
-
-In addition, you can enhance user experience by streamlining the communication with a Welcome Message, Quick Replies and Button. Using Quick Replies can improve the clarity of your customer’s intention as they are presented with a list of predefined options determined by you.
+In addition, you can enhance the user experience by streamlining communication with a Welcome Message, Quick Replies, and Button. Using Quick Replies can clarify your customer’s intentions, as they are presented with a list of predefined options set by you.
 
 Mock API Server Information: [Link](https://documenter.getpostman.com/view/21816899/2s9YBxZbgh)
 
