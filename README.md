@@ -7,7 +7,7 @@
 This demo app showcases what AI Chatbots with Sendbird can do to enhance the customer experience of your service with more personalized and comprehensive customer support.
 Utilizing OpenAI’s GPT3.5 and its Function Calling functionality, ***Sendbird helps you build a chatbot that can go extra miles: providing informative responses with the data source you feed to the bot, accommodating customer’s requests such as tracking and canceling their orders, and even recommending new products.*** Create your own next generation AI Chatbot by following the tutorial below.
 
-![fintech](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/5c4f174b-bc49-49e3-92a7-734d1ccb3780)
+![fintech](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/b854bedf-b678-4ebd-9148-9dea2f75ac38)
 
 ## Prerequisites
 1. [Sendbird Account](https://dashboard.sendbird.com/)
