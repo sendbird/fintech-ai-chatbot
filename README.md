@@ -116,6 +116,15 @@ You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot set
 - Input example
   <img width="1148" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/c2cd887d-4f18-41b1-85e3-fb8301010e25">
 
+## Custom Response
+
+
+
+You can find this setting under Chat > AI Chatbot > Settings > Custom reponse. 
+
+![custom_response](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/35a2f669-1027-4842-875c-03e462de314c)
+
+
 ## UI Components
 ### CardView
 The `data` in the response are displayed in a Card view. In the demo, information such as order items and their delivery status can be displayed in a card with an image, title, and description. Customization of the view can be done through `cardViewParamsCollectionBuilder` and `SBUCardViewParams`. The following codes show how to set the Card view of order status.
