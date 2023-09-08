@@ -96,7 +96,7 @@ If a customer needs further assistance related to Fintech Bot functionalities or
 ### Function Calls
 `Function Calls` allows you to define situations where the ChatBot needs to interface with external APIs. Within `Function Calls`, you need to enter definitions for the Function and Parameters to pass to GPT, and you can define the specs of the 3rd party API to obtain the actual data of the specified Function.
 
-You can find this setting under Chat > AI Chatbot > Settings > Function Calls. 
+You can find this setting under Chat > AI Chatbot > Function Calls. 
 
 - Example list of Function Calls
   <img width="1231" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/6cf69e85-8e10-4eac-8d2f-f3df7472d700">
@@ -123,7 +123,7 @@ Through the `Custom Response` feature, you can execute tailored response message
 
 To allow the chatbot to accurately understand the intent, it's recommended to input about 10 messages. By using the `AI suggestions` feature, this input process can be made much more convenient.
 
-You can find this setting under Chat > AI Chatbot > Settings > Custom reponses. 
+You can find this setting under Chat > AI Chatbot > Custom reponses. 
 
 ![custom_response](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/35a2f669-1027-4842-875c-03e462de314c)
 
