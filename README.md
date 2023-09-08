@@ -117,15 +117,15 @@ You can find this setting under Chat > AI Chatbot > Manage bots > Edit > Bot set
 - Input example
   <img width="1148" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/c2cd887d-4f18-41b1-85e3-fb8301010e25">
 
-## Custom Response
+## Custom Responses
 
-Through the `Custom Response` feature, you can execute tailored response messages or function calls based on the user's message intent. Additionally, you can also add `Suggested Replies`. 
+Through the `Custom Responses` feature, you can execute tailored response messages or function calls based on the user's message intent. Additionally, you can also add `Suggested Replies`. 
 
 To allow the chatbot to accurately understand the intent, it's recommended to input about 10 messages. By using the `AI suggestions` feature, this input process can be made much more convenient.
 
 You can find this setting under Chat > AI Chatbot > Custom reponses. 
 
-![custom_response](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/35a2f669-1027-4842-875c-03e462de314c)
+![custom_response](https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/fd1388d5-c684-4334-9168-5429429617f1)
 
 ## UI Components
 ### CardView
