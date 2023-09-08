@@ -30,7 +30,7 @@ let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbi
 3. [Demo app settings](#demo-app-settings)
 4. [System Message](#system-message)
 5. [Function Calls](#function-calls)
-6. [Welcome Message and Suggested Replies](#welcome-message-and-quick-replies)
+6. [Welcome Message and Suggested Replies](#welcome-message-and-suggested-replies)
 7. [UI Components](#ui-components)
 8. [Limitations](#limitations)
 
