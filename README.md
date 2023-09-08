@@ -49,7 +49,7 @@ let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbi
 4. [System Message](#system-message)
 5. [Function Calls](#function-calls)
 6. [Welcome Message and Suggested Replies](#welcome-message-and-suggested-replies)
-7. [Custom Response](#custom-responses)
+7. [Custom Responses](#custom-responses)
 8. [UI Components](#ui-components)
 9. [Limitations](#limitations)
 
