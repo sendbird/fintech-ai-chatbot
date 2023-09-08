@@ -37,7 +37,7 @@ let applicationId: String = <#applicationId: String#>  //  TODO: set your sendbi
 This demo app demonstrates the implementation of the AI Chatbot tailored for fintech. It includes functionalities such as ***retrieving the order list, showing order details, canceling orders, and providing recommendations.*** By leveraging ChatGPT’s new feature [Function Calling](https://openai.com/blog/function-calling-and-other-api-updates), the Chatbot now can make an API request to the 3rd party with a predefined Function Calling based on customer’s enquiry. Then it parses and presents the response in a conversational manner, enhancing overall customer experience.
 
 ## How it works
-<img width="2300" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/dd592023-5bfd-41a2-b659-389f762a47b1">
+<img width="2000" alt="image" src="https://github.com/sendbird/fintech-ai-chatbot/assets/104121286/d4ff5f4c-1df9-40d7-9901-9e3d342d94d8">
 
 1. A customer sends a message containing a specific request on the client app to the Sendbird server.
 2. The Sendbird server then delivers the message to Chat GPT.
